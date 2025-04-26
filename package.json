@@ -1,0 +1,23 @@
+{
+    "name": "chat-translation-app",
+    "version": "1.0.0",
+    "description": "Chat application that translates between English and Tamil",
+    "main": "server/server.js",
+    "scripts": {
+      "start": "node server/server.js",
+      "dev": "nodemon server/server.js",
+      "client": "cd client && npm start",
+      "dev-all": "concurrently \"npm run dev\" \"npm run client\""
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "socket.io": "^4.7.2",
+      "node-fetch": "^2.6.12",
+      "cors": "^2.8.5",
+      "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.1",
+      "concurrently": "^8.2.1"
+    }
+  }
